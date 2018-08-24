@@ -3,6 +3,10 @@
 
 dateFuture = new Date(2019,0,5,9,0,0);
 
+function changeBackground(color) {
+   document.body.style.background = color;
+}
+        
 function GetCount(){
 
         dateNow = new Date();                                                                        //grab current date
@@ -39,6 +43,8 @@ function GetCount(){
                 setTimeout("GetCount()", 1000);
         }
 }
+        
+<BODY onload="changeBackground('red');">
 
 window.onload=function(){GetCount();}//call when everything has loaded
 
