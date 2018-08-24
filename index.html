@@ -1,53 +1,101 @@
-<SCRIPT TYPE="text/javascript" LANGUAGE="JavaScript">
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Countdown Timer</title>
+<meta name="description" content="Countdown to a date & time with customizable alarm sound. Simple & free large online countdown timer!">
+
+<script type="text/javascript">
 <!--
+if (window.screen.width < 800)
+   {
+     window.location = "//m.onlineclock.net/countdown/";
+   }
+ //-->
+</script>
 
-dateFuture = new Date(2019,0,5,9,0,0);
+<script src="//countdown.onlineclock.net/javascript/countdown-v4.js" type="text/javascript"></script>
+<link rel="canonical" href="https://countdown.onlineclock.net/">
+<link rel="publisher" href="https://plus.google.com/100042186937427165447">
+<meta property="og:image" content="https://countdown.onlineclock.net/countdown-timer.jpg">
 
-function changeBackground(color) {
-   document.body.style.background = color;
+
+<meta name="robots" content="index,follow,archive">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//m.onlineclock.net/countdown/">
+<link rel="shortcut icon" href="//countdown.onlineclock.net/favicon.ico">
+
+<style type="text/css">html,td{font-family:helvetica,arial;font-size:12px;font-weight:bold;}a.sizeLink,.sizeLink{font-family:helvetica,arial;font-size:12px;font-weight:bold;color:#FFFFFF;}#countdownDisp{font-size:56px;vertical-align:middle;text-align:center;background-color:#000000;color:red;font-weight:900;border:0px none;margin-top:10px;margin-bottom:0px;width:100%;}a.targetdate,.targetdate{font-size:12px;vertical-align:middle;text-align:center;color:white;border:0px none;margin-top:0px;}.button{font:bold 14px Arial;text-decoration:none;background-color:#EEEEEE;color:#333333;padding:2px 6px 2px 6px;border-top:1px solid #CCCCCC;border-right:1px solid #333333;border-bottom:1px solid #333333;border-left:1px solid #CCCCCC;}.qmmc .qmdivider{display:block;font-size:1px;border-width:0px;border-style:solid;position:relative;z-index:1;}.qmmc .qmdividery{float:left;width:0px;}.qmmc .qmtitle{display:block;cursor:default;white-space:nowrap;position:relative;z-index:1;}.qmclear{font-size:1px;height:0px;width:0px;clear:left;line-height:0px;display:block;float:none!important;}.qmmc{position:relative;zoom:1;z-index:10;}.qmmc a,.qmmc li{float:left;display:block;white-space:nowrap;position:relative;z-index:1;}.qmmc div a,.qmmc ul a,.qmmc ul li{float:none;}.qmsh div a{float:left;}.qmmc div{visibility:hidden;position:absolute;}.qmmc .qmcbox{cursor:default;display:inline-block;position:relative;z-index:1;}.qmmc .qmcbox a{display:inline;}.qmmc .qmcbox div{float:none;position:static;visibility:inherit;left:auto;}#qm0{width:auto;}#qm0 a{padding:0px 3px 0px 0px;background-color:transparent;color:#FFFFFF;font-family:helvetica,arial;font-size:10px;text-decoration:underline;text-align:left;}#qm0 div{padding:10px;margin:-1px 0px 0px 0px;background-color:transparent;border-width:1px;border-style:solid;border-color:#222222;}#qm0 div a{padding:3px 20px 3px 2px;margin:0px;background-color:transparent;color:#EEEEEE;font-family:helvetica,arial;font-size:9px;text-decoration:underline;}#qm0 div a:hover{color:#FFFFFF;text-decoration:underline;}#qm0 div a:hover{color:#FFFFFF;text-decoration:underline;}#qm0 div .qmparent{}body #qm0 div .qmactive,body #qm0 div .qmactive:hover{background-color:#FFFFFF;color:#000000;text-decoration:underline;}#qm0 .qmtitle{margin:2px 0px 5px 0px;color:#999999;font-family:helvetica,arial;font-size:12px;font-weight:bold;}#qm0 .qmdividerx{border-top-width:1px;margin:4px 0px 4px 0px;border-color:#999999;}ul#qm0 a img{display:block;border-style:none;}ul#qm0 ul li:hover>a.qmparent{background-color:#FFFFFF;color:#000000;text-decoration:underline;}</style>
+<script>
+<!--
+var theTargetDate = "January 05, 2019 09:00:00";//-->
+</script>
+<script src="//countdown.onlineclock.net/javascript/datechooser/date-functions.js" type="text/javascript"></script>
+<script src="//countdown.onlineclock.net/javascript/datechooser/datechooser.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="//countdown.onlineclock.net/javascript/datechooser/datechooser.css">
+<!--[if lte IE 6.5]>
+<link rel="stylesheet" type="text/css" href="//countdown.onlineclock.net/javascript/datechooser/select-free.css"/>
+<![endif]-->
+</head>
+<body onLoad="removeUnderline(1);removeUnderline2(5);showCountdown();" bgcolor="#000000" text="#666666" id="theBody">
+
+<tr>
+<td width="50%" valign="top">
+
+
+<script type="text/javascript">qm_create(0,false,0,500,false,false,false,false,false);</script>
+<a href="javascript:void(0);" onClick="changeImageSize(36,50,18,50);removeUnderline(0);" class="sizeLink" title="Small" id="lsmall">Small</a> | <a href="javascript:void(0);" onClick="changeImageSize(72,100,36,100);removeUnderline(1);" class="sizeLink" title="Medium" id="lmedium">Medium</a> | <a href="javascript:void(0);" onClick="changeImageSize(144,200,66,183);removeUnderline(2);" class="sizeLink" title="Large" id="llarge">Large</a> | <a href="javascript:void(0);" onClick="changeImageSize(180,250,76,211);removeUnderline(3);" class="sizeLink" title="X-Large" id="lxlarge">X-Large</a>
+</td>
+<td width="50%" align="right" valign="top">
+<a href="javascript:void(0);" onClick="changeBackground('blue');removeUnderline2(4);" class="sizeLink" title="Blue" id="lblue">Blue</a> | <a href="javascript:void(0);" onClick="changeBackground('black');removeUnderline2(5);" class="sizeLink" title="Black" id="lblack">Black</a> | <a href="javascript:void(0);" onClick="changeBackground('silver');removeUnderline2(6);" class="sizeLink" title="Silver" id="lsilver">Silver</a> | <a href="javascript:void(0);" onClick="changeBackground('#006400');removeUnderline2(7);" class="sizeLink" title="Green" id="lgreen">Green</a> | <a href="javascript:void(0);" onClick="changeBackground('orange');removeUnderline2(8);" class="sizeLink" title="Orange" id="lorange">Orange</a>
+</td>
+</tr>
+</table>
+
+<table align="center" width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td align="center" valign="middle" width="100%" height="100%">
+
+<form action="save.html" method="post" style="margin-top:0px;margin-bottom:0px;">
+<div id="countdownDisp">
+<img height="100" src="//countdown.onlineclock.net/numerals/cb.gif" width="72" name="a" id="a" alt="Days until..." title="Days until...">
+<img height="100" src="//countdown.onlineclock.net/numerals/cb.gif" width="72" name="b" id="b" alt="Days until..." title="Days until...">
+<img height="100" src="//countdown.onlineclock.net/numerals/cb.gif" width="72" name="c" id="c" alt="Days until..." title="Days until...">
+<img height="100" src="//countdown.onlineclock.net/numerals/colon.gif" width="36" name="d" id="d" alt=":" title=":">
+<img height="100" src="//countdown.onlineclock.net/numerals/cb.gif" width="72" name="e" id="e" alt="Hours until..." title="Hours until...">
+<img height="100" src="//countdown.onlineclock.net/numerals/cb.gif" width="72" name="f" id="f" alt="Hours until..." title="Hours until...">
+<img height="100" src="//countdown.onlineclock.net/numerals/colon.gif" width="36" name="g" id="g" alt=":" title=":">
+<img height="100" src="//countdown.onlineclock.net/numerals/cb.gif" width="72" name="h" id="h" alt="Minutes until..." title="Minutes until...">
+<img height="100" src="//countdown.onlineclock.net/numerals/cb.gif" width="72" name="i" id="i" alt="Minutes until..." title="Minutes until...">
+<img height="100" src="//countdown.onlineclock.net/numerals/colon.gif" width="36" name="j" id="j" alt=":" title=":">
+<img height="100" src="//countdown.onlineclock.net/numerals/cb.gif" width="72" name="k" id="k" alt="Seconds until..." title="Seconds until...">
+<img height="100" src="//countdown.onlineclock.net/numerals/cb.gif" width="72" name="l" id="l" alt="Seconds until..." title="Seconds until...">
+</div>
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<span id="playFix"></span>
+<script type="text/javascript">
+<!--
+var soundPlay = "<audio autoplay loop><source src=\"//onlineclock.net/audio/silence.mp3\"; type=\"audio/mpeg\"></audio>";
+function makeSilentAgain(){
+    document.getElementById("playFix").innerHTML ="";
 }
-        
-function GetCount(){
-
-        dateNow = new Date();                                                                        //grab current date
-        amount = dateFuture.getTime() - dateNow.getTime();                //calc milliseconds between dates
-        delete dateNow;
-
-        // time is already past
-        if(amount < 0){
-                document.getElementById('countbox').innerHTML="Now!";
-        }
-        // date is still good
-        else{
-                days=0;hours=0;mins=0;secs=0;out="";
-
-                amount = Math.floor(amount/1000);//kill the "milliseconds" so just secs
-
-                days=Math.floor(amount/86400);//days
-                amount=amount%86400;
-
-                hours=Math.floor(amount/3600);//hours
-                amount=amount%3600;
-
-                mins=Math.floor(amount/60);//minutes
-                amount=amount%60;
-
-                secs=Math.floor(amount);//seconds
-
-                if(days != 0){out += days +" day"+((days!=1)?"s":"")+", ";}
-                if(days != 0 || hours != 0){out += hours +" hour"+((hours!=1)?"s":"")+", ";}
-                if(days != 0 || hours != 0 || mins != 0){out += mins +" minute"+((mins!=1)?"s":"")+", ";}
-                out += secs +" seconds";
-                document.getElementById('countbox').innerHTML=out;
-
-                setTimeout("GetCount()", 1000);
-        }
+function playQuietly()
+{
+    document.getElementById("playFix").innerHTML = soundPlay;
+    setTimeout(makeSilentAgain,11000);
 }
-        
-BODY.onload="changeBackground('red');">
-
-window.onload=function(){GetCount();}//call when everything has loaded
-
 //-->
 </script>
-<div id="countbox"></div>
+
+
+</BODY>
+</HTML>
