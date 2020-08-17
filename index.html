@@ -1,30 +1,223 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
-<title>Countdown Timer</title>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Hours Clock & Hours Timer</title>
+<meta name="description" content="Just a simple display of the current Hours of the Day for you to use in counting the Hours of the Day as they go by!">
+<link rel="canonical" href="https://onlineclock.net/hours/">
+<meta property="og:image" content="https://onlineclock.net/hours/hours-clock.png">
 
-<script src="//countdown.onlineclock.net/javascript/countdown-v4.js" type="text/javascript">
+<script type="text/javascript">
+<!--
+if (window.screen.width < 641)
+{
+  window.location = "//m.onlineclock.net/hours/";
+}
+ //-->
 </script>
 
-<script> var theTargetDate = "March 29, 2019 08:00:00"
-</script>
 
-<link rel="shortcut icon" href="//countdown.onlineclock.net/favicon.ico">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@onlineclock">
+<meta name="twitter:title" content="Hours Clock & Hours Timer">
+<meta name="twitter:description" content="Just a simple display of the current Hours of the Day for you to use in counting the Hours of the Day as they go by!">
+<meta name="twitter:image:src" content="https://onlineclock.net/hours/hours.png">
 
-<body onLoad="showCountdown()" bgcolor="#000000">
-<table align="center" height="100%">
-<td>
-<img src="//countdown.onlineclock.net/numerals/cb.gif" name="a">
-<img src="//countdown.onlineclock.net/numerals/cb.gif" name="b">
-<img src="//countdown.onlineclock.net/numerals/cb.gif" name="c">
-<img src="//countdown.onlineclock.net/numerals/colon.gif">
-<img src="//countdown.onlineclock.net/numerals/cb.gif" name="e">
-<img src="//countdown.onlineclock.net/numerals/cb.gif" name="f">
-<img src="//countdown.onlineclock.net/numerals/colon.gif">
-<img src="//countdown.onlineclock.net/numerals/cb.gif" name="h">
-<img src="//countdown.onlineclock.net/numerals/cb.gif" name="i">
-<img src="//countdown.onlineclock.net/numerals/colon.gif">
-<img src="//countdown.onlineclock.net/numerals/cb.gif" name="k">
-<img src="//countdown.onlineclock.net/numerals/cb.gif" name="l">
+<meta name="robots" content="index,follow,archive">
+<link rel="shortcut icon" href="//onlineclock.net/favicon.ico">
+
+<style type="text/css">html,td{font-family:helvetica,arial;font-size:12px;font-weight:700}h1.header{font-size:2px;margin-top:0;margin-bottom:0}a.sizeLink,.sizeLink{font-family:helvetica,arial;font-size:12px;font-weight:700;color:#fff}.newMSG{color:red;font-weight:700}.numeral_IMG{filter:drop-shadow(0px 0px 3px #ff0000aa) blur(0px) brightness(1.3)}.dropbtn{border:none;background-color:transparent}.dropdown{position:relative;display:inline-block}.dropdown-content{display:none;position:absolute;min-width:180px;box-shadow:0 8px 16px 0 rgba(0,0,0,.2);z-index:1}.dropdown-content a{padding:6px 8px;text-decoration:none;display:block}.dropbtn2{border:none;background-color:transparent}.dropdown2{position:relative;display:inline-block}.dropdown-content2{display:none;position:absolute;min-width:180px;box-shadow:0 8px 16px 0 rgba(0,0,0,.2);z-index:1}.dropdown-content2 a{padding:6px 8px;text-decoration:none;display:block}::-webkit-scrollbar{display:none;}</style>
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//m.onlineclock.net/hours/">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.core.min.js" type="text/javascript"></script>
+<script src="//onlineclock.net/hours/javascript/hours-txt1.js" type="text/javascript"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body bgcolor="#000000" text="#666666" id="theBody">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50%" valign="top">
+<div class="dropdown" style="z-index: 11; float: left;">
+<img alt="Menu" title="Click to show/hide Menu" class="dropbtn" id="dropbtn" src="//onlineclock.net/images/menu.png" width="16" height="16" border="0" onclick="showDropDownMenu()">
+<div id="dropDownLeft" class="dropdown-content" style="display:none;"><br>
+<span>Online Alarm Clocks</span>
+<a href="//onlineclock.net/" title="Online Alarm Clock" target="_blank" class="sizeLink">Online Alarm Clock</a>
+<a href="//onlineclock.net/timezones/" title="Time Zone Clocks" target="_blank" class="sizeLink">Time Zone Clocks</a>
+<a href="//military.onlineclock.net/" title="Military Time" target="_blank" class="sizeLink">Military Time</a>
+<a href="//military.onlineclock.net/chart/" title="Military Time Converter" target="_blank" class="sizeLink">Military Time Converter</a>
+<a href="//analog.onlineclock.net/" title="Analog Alarm Clock" target="_blank" class="sizeLink">Analog Alarm Clock</a>
+<a href="//onlineclock.net/noisegenerator/" title="White Noise Generator" target="_blank" class="sizeLink">White Noise Generator</a>
+<a href="//onlineclock.net/video/" title="Video Alarm Clock" target="_blank" class="sizeLink">Video Alarm Clock</a>
+<span></span>
+<span>Countdown Timers</span>
+<a href="//countdown.onlineclock.net/" title="Countdown Timer" target="_blank" class="sizeLink">Countdown Timer</a>
+<a href="//timer.onlineclock.net/" title="Online Timer" target="_blank" class="sizeLink">Online Timer</a>
+<a href="//timer.onlineclock.net/timers/" title="Timers" target="_blank" class="sizeLink">Timers</a>
+<a href="//countdown.onlineclock.net/generator/" title="Countdown Generator" target="_blank" class="sizeLink">Countdown Generator</a>
+<a href="//countdown.onlineclock.net/countdowns/" title="Popular Countdowns" target="_blank" class="sizeLink">Popular Countdowns</a>
+<a href="//counter.onlineclock.net/" title="Online Counter" target="_blank" class="sizeLink">Online Counter</a>
+<a href="//task.onlineclock.net/" title="Task Timer" target="_blank" class="sizeLink">Task Timer</a>
+<span></span>
+<span>Online Stopwatches</span>
+<a href="//stopwatch.onlineclock.net/" title="Online Stopwatch" target="_blank" class="sizeLink">Online Stopwatch</a>
+<a href="//stopwatch.onlineclock.net/alarm/" title="Stopwatch With Alarm" target="_blank" class="sizeLink">Stopwatch With Alarm</a>
+<a href="//stopwatch.onlineclock.net/games/" title="Stopwatch Games" target="_blank" class="sizeLink">Stopwatch Games</a>
+<span></span>
+<span>Fun Online Clocks</span>
+<a href="//binary.onlineclock.net/" title="Binary Clock" target="_blank" class="sizeLink">Binary Clock</a>
+<a href="//domino.onlineclock.net/" title="Domino Clock" target="_blank" class="sizeLink">Domino Clock</a>
+<a href="//space.onlineclock.net/" title="Space Clock" target="_blank" class="sizeLink">Space Clock</a>
+<a href="//barcode.onlineclock.net/" title="Barcode Alarm Clock" target="_blank" class="sizeLink">Barcode Alarm Clock</a>
+<a href="//circles.onlineclock.net/" title="Circles Clock" target="_blank" class="sizeLink">Circles Clock</a>
+<a href="//words.onlineclock.net/" title="Word Alarm Clock" target="_blank" class="sizeLink">Word Alarm Clock</a>
+</div>&nbsp;&nbsp;
+</div>
+<span id="topLeft"><a href="javascript:void(0);" onClick="changeImageSize(28,'small',0);" class="sizeLink" title="Small" id="lsmall">Small</a> | <a href="javascript:void(0);" onClick="changeImageSize('medium','medium',1);" class="sizeLink" title="Medium" id="lmedium">Medium</a> | <a href="javascript:void(0);" onClick="changeImageSize(8,'large',2);" class="sizeLink" title="Large" id="llarge">Large</a> | <a href="javascript:void(0);" onClick="changeImageSize(5,'x-large',3);" class="sizeLink" title="X-Large" id="lxlarge">XL</a> | <a href="javascript:void(0);" onClick="toggleFullscreen();" id="linkFullscreen" class="sizeLink" title="Enter Fullscreen Mode">Fullscreen</a></span>
 </td>
+<td width="50%" align="right" valign="top">
+<span id="topRight"><a href="javascript:void(0);" onClick="changeBackground('clouds',16);" class="sizeLink" title="Clouds" id="l_clouds">Clouds</a> | <a href="javascript:void(0);" onClick="changeBackground('black',5);" class="sizeLink" title="Classic Black" id="l_black">Black</a> | <a href="javascript:void(0);" onClick="changeBackground('space',6);" class="sizeLink" title="Outer Space" id="l_space">Space</a> | <a href="javascript:void(0);" onClick="changeBackground('woods',7);" class="sizeLink" title="Wood Forest" id="l_woods">Woods</a> | <a href="javascript:void(0);" onClick="changeBackground('ocean',8);" class="sizeLink" title="Blue Ocean" id="l_ocean">Ocean</a> | <a href="javascript:void(0);" onClick="changeBackground('snow',9);" class="sizeLink" title="Blue/White Snow" id="l_snow">Snow</a>
+&nbsp;&nbsp;<div class="dropdown2" style="z-index:12;float:right;top:0;">
+<img alt="Textures" title="More Backgrounds" class="dropbtn2" id="dropbtn2" src="//onlineclock.net/images/menu2.png" width="16" height="16" border="0" onclick="showDropDownMenu2()">
+<div id="dropDownRight" class="dropdown-content2" style="right:0;display:none;"><br>
+<span>More Wallpapers</span>
+<a href="javascript:void(0);" onClick="changeBackground('city',4);" class="sizeLink" title="City Skyline" id="l_city">City</a>
+<a href="javascript:void(0);" onClick="changeBackground('leather',18);" class="sizeLink" title="Leather" id="l_leather">Leather</a>
+<a href="javascript:void(0);" onClick="changeBackground('factory',17);" class="sizeLink" title="Night Factory" id="l_factory">Factory</a>
+<a href="javascript:void(0);" onClick="changeBackground('panel',19);" class="sizeLink" title="Wood Panel" id="l_panel">Wood Panel</a>
+<span></span>
+<span><em>Or</em> Just Colors</span>
+<a href="javascript:void(0);" onClick="changeBackgroundColor('blue',10);" class="sizeLink" title="Blue" id="l_blue">Blue</a>
+<a href="javascript:void(0);" onClick="changeBackgroundColor('silver',11);" class="sizeLink" title="Silver" id="l_silver">Silver</a>
+<a href="javascript:void(0);" onClick="changeBackgroundColor('#006400',12);" class="sizeLink" title="Green" id="l_green">Green</a>
+<a href="javascript:void(0);" onClick="changeBackgroundColor('orange',13);" class="sizeLink" title="Orange" id="l_orange">Orange</a>
+<a href="javascript:void(0);" onClick="changeBackgroundColor('#7f00ff',14);" class="sizeLink" title="Violet" id="l_violet">Violet</a>
+<a href="javascript:void(0);" onClick="changeBackgroundColor('#4b3832',15);" class="sizeLink" title="Cappuccino" id="l_tan">Cappuccino</a>
+</div>
+</div></span>
+</td>
+</tr>
 </table>
-</BODY>
+
+<table align="center" width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td align="center" valign="middle" width="100%" height="100%">
+
+<table border="0" cellspacing="4" cellpadding="4" align="center" width="100%" id="hoursDiv">
+<tr>
+<td align="center" width="100%">
+<img height="200" src="//onlineclock.net/numerals/cb.gif" width="144" name="a" id="a" class="numeral_IMG" alt="Current Hours" title="Current Hours">
+<img height="200" src="//onlineclock.net/numerals/cb.gif" width="144" name="b" id="b" class="numeral_IMG" alt="Current Hours" title="Current Hours">
+<img height="100" src="//onlineclock.net/images/cam.gif" width="72" name="j" id="j" alt="AM / PM">
+</td>
+</tr>
+<tr>
+<td align="center" valign="top">
+<a href="javascript:toggleVis();" style="position:relative;top:0;left:0;" id="linkHideShow" title="Hide Navigation"><img src="//onlineclock.net/images/hide-icon20.png" width="20" height="20" border="0" alt="Hide/Show Navigation"></a><br><span id="midNav">[ <a href="javascript:darkMode();" id="dMode" class="sizeLink" title="Click to toggle Dark Mode">Dark Mode</a> | <a href="//onlineclock.net/" target="_blank" class="sizeLink" title="Full Clock">Full Clock</a> | Hours | <a href="//onlineclock.net/minutes/" target="_blank" class="sizeLink" title="Minutes">Minutes</a> | <a href="//onlineclock.net/seconds/" target="_blank" class="sizeLink" title="Seconds">Seconds</a> | <a href="//timer.onlineclock.net/" target="_blank" class="sizeLink" title="Timer">Timer</a> ]
+<br></span><br>
+<form name="thisForm" style="margin-top:0px; margin-bottom:0px;" action="//onlineclock.net/hours/alarm.html" method="post">
+<h1 style="color:#999999;font-weight:bold;font-size:16px;display:inline;" id="hoursHeader">Hours Timer Alarm Settings:</h1>
+</td>
+</tr>
+<tr>
+<td align="center">
+
+<table border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+<td align="center">
+<select name="alarm_hour" id="alarm_hour" title="Alarm Hour" style="font-size:18px;" onChange="playQuietlyOrig();playQuietly();"><option value="OFF" selected>OFF</option><option value="1" style="text-align: right;">&nbsp;&nbsp;1 AM</option><option value="2" style="text-align: right;">&nbsp;&nbsp;2 AM</option><option value="3" style="text-align: right;">&nbsp;&nbsp;3 AM</option><option value="4" style="text-align: right;">&nbsp;&nbsp;4 AM</option><option value="5" style="text-align: right;">&nbsp;&nbsp;5 AM</option><option value="6" style="text-align: right;">&nbsp;&nbsp;6 AM</option><option value="7" style="text-align: right;">&nbsp;&nbsp;7 AM</option><option value="8" style="text-align: right;">&nbsp;&nbsp;8 AM</option><option value="9" style="text-align: right;">&nbsp;&nbsp;9 AM</option><option value="10" style="text-align: right;">10 AM</option><option value="11" style="text-align: right;">11 AM</option><option value="12" style="text-align: right;">12 PM</option><option value="13" style="text-align: right;">&nbsp;&nbsp;1 PM</option><option value="14" style="text-align: right;">&nbsp;&nbsp;2 PM</option><option value="15" style="text-align: right;">&nbsp;&nbsp;3 PM</option><option value="16" style="text-align: right;">&nbsp;&nbsp;4 PM</option><option value="17" style="text-align: right;">&nbsp;&nbsp;5 PM</option><option value="18" style="text-align: right;">&nbsp;&nbsp;6 PM</option><option value="19" style="text-align: right;">&nbsp;&nbsp;7 PM</option><option value="20" style="text-align: right;">&nbsp;&nbsp;8 PM</option><option value="21" style="text-align: right;">&nbsp;&nbsp;9 PM</option><option value="22" style="text-align: right;">10 PM</option><option value="23" style="text-align: right;">11 PM</option><option value="0" style="text-align: right;">12 AM</option></select>
+<INPUT name="alarm_minute" TYPE="HIDDEN" value="0" CHECKED>
+<INPUT TYPE="HIDDEN" NAME="mode" value="alarm" CHECKED></td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</form>
+
+</td>
+</tr>
+<tr>
+<td align="center" valign="bottom">
+
+
+<span id="botMid"><ul class="share-buttons" style="list-style:none;padding:0;">
+<li style="display:inline;"><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fonlineclock.net&text=Online%20Clock:%20http%3A%2F%2Fonlineclock.net&via=onlineclock" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img alt="Tweet" src="//onlineclock.net/images/socialbut/twitter.png" /></a></li>
+<li style="display:inline;"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fonlineclock.net&quote=Online%20Clock" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&quote=' + encodeURIComponent(document.URL)); return false;"><img alt="Share on Facebook" src="//onlineclock.net/images/socialbut/facebook.png" /></a></li>
+<li style="display:inline;"><a href="//www.tumblr.com/share?v=3&u=http%3A%2F%2Fonlineclock.net&quote=Online%20Clock&s=" target="_blank" title="Post to Tumblr" onclick="window.open('//www.tumblr.com/share?v=3&u=' + encodeURIComponent(document.URL) + '&quote=' +  encodeURIComponent(document.title)); return false;"><img alt="Post to Tumblr" src="//onlineclock.net/images/socialbut/tumblr.png" /></a></li>
+<li style="display:inline;"><a href="https://getpocket.com/save?url=http%3A%2F%2Fonlineclock.net&title=Online%20Clock" target="_blank" title="Add to Pocket" onclick="window.open('https://getpocket.com/save?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img alt="Add to Pocket" src="//onlineclock.net/images/socialbut/pocket.png" /></a></li>
+<li style="display:inline;"><a href="//www.reddit.com/submit?url=http%3A%2F%2Fonlineclock.net&title=Online%20Clock" target="_blank" title="Submit to Reddit" onclick="window.open('//www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img alt="Submit to Reddit" src="//onlineclock.net/images/socialbut/reddit.png" /></a></li>
+<li style="display:inline;"><a href="//www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fonlineclock.net&title=Online%20Clock&summary=Check%20out%20the%20Online%20Clock%20website!&source=http%3A%2F%2Fonlineclock.net" target="_blank" title="Share on LinkedIn" onclick="window.open('//www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img alt="Share on LinkedIn" src="//onlineclock.net/images/socialbut/linkedin.png" /></a></li>
+<li style="display:inline;"><a href="//wordpress.com/press-this.php?u=http%3A%2F%2Fonlineclock.net&quote=Online%20Clock&s=Check%20out%20the%20Online%20Clock%20website!" target="_blank" title="Publish on WordPress" onclick="window.open('//wordpress.com/press-this.php?u=' + encodeURIComponent(document.URL) + '&quote=' +  encodeURIComponent(document.title)); return false;"><img alt="Publish on WordPress" src="//onlineclock.net/images/socialbut/wordpress.png" /></a></li>
+<li style="display:inline;"><a href="mailto:?subject=Online%20Clock&body=Check%20out%20the%20Online%20Clock%20website!:%20http%3A%2F%2Fonlineclock.net" target="_blank" title="Send email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img alt="Send email" src="//onlineclock.net/images/socialbut/email.png" /></a></li>
+</ul>
+
+<center>&copy; 2006 - 2020 OnlineClock.net | <a href="//onlineclock.net/about/privacy.html#contact" class="sizeLink">Contact</a> | <a href="//onlineclock.net/about/" class="sizeLink">About</a> | <a href="//onlineclock.net/about/privacy.html#privacy" class="sizeLink">Privacy</a> | <a href="https://twitter.com/onlineclock" class="sizeLink" target="_blank" title="Online Clock on Twitter">Twitter</a> | <a href="https://www.instagram.com/onlinealarmclock/" class="sizeLink" target="_blank" title="Online Clock on Instagram">Insta</a> | <a href="https://www.facebook.com/onlineclock/" class="sizeLink" target="_blank" title="Online Clock on Facebook">FB</a></center></span>
+<br>
+
+</td>
+</tr>
+</table>
+
+<script type="text/javascript">
+var origHeader = document.getElementById("hoursHeader").textContent;
+var chosenTexture = checkTextureCookie();
+var thatWidthThang = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+if (thatWidthThang > 799)
+{
+	var chosenClockSize = checkClockSizeCookie();
+	var chosenClockSizeName = checkClockSizeNameCookie();
+	changeImageSize(chosenClockSize,chosenClockSizeName,"");
+}
+else
+{
+	changeImageSize('medium','medium',1);
+}
+function doTheLoad()
+{
+	document.thisForm.alarm_hour.value="OFF";
+	show3();
+	changeBackground(chosenTexture,"");
+}
+window.onload = doTheLoad();
+</script>
+<link rel="prefetch" href="//onlineclock.net/audio/alarm2.mp3">
+<script src="//onlineclock.net/sounds/javascript/sound-cookies.js" type="text/javascript" defer></script>
+
+<span id="playFix"></span>
+<span id="visFix"></span>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-477189-6', 'auto');
+ga('set', 'anonymizeIp', true); 
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "item": {
+      "@id": "https://onlineclock.net/",
+      "name": "Online Clock"
+    }
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "item": {
+      "@id": "https://onlineclock.net/hours/",
+      "name": "Hours"
+    }
+  }]
+}
+</script>
+
+</body>
 </HTML>
